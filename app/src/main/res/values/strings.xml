@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BasketShotTracker</string>
+
+    <string name="stats_mode_all">Juntos</string>
+    <string name="stats_period">últimos 30 días</string>
+    <string name="shots_label">Tiros / intentos</string>
+    <string name="shots_count">270 / 1000</string>
+</resources>

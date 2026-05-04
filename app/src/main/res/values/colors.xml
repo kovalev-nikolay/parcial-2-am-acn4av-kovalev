@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_bg">#202020</color>
+    <color name="color_card">#3A3A3A</color>
+    <color name="color_card_light">#555555</color>
+
+    <color name="color_orange">#FF7A1A</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_gray">#BDBDBD</color>
+    <color name="color_black">#000000</color>
+</resources>
