@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     private void createDynamicModeInfo() {
         tvDynamicModeInfo = new TextView(this);
         tvDynamicModeInfo.setText("Modo seleccionado: Juntos");
-        tvDynamicModeInfo.setTextColor(getResources().getColor(R.color.color_orange));
+        tvDynamicModeInfo.setTextColor(getColor(R.color.color_orange));
         tvDynamicModeInfo.setTextSize(14);
         tvDynamicModeInfo.setPadding(0, 12, 0, 0);
 
@@ -88,48 +88,56 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showJuntosStats() {
-        tvStatsModeTitle.setText("Juntos");
+        tvStatsModeTitle.setText(R.string.mode_juntos);
         tvAccuracyPercent.setText("27%");
         tvShotsCount.setText("270 / 1000");
         imgStatsRing.setImageResource(R.drawable.stats_ring_static);
         setActiveButton(btnJuntos);
-        tvDynamicModeInfo.setText("Modo seleccionado: Juntos");
+        tvDynamicModeInfo.setText(
+                getString(R.string.dynamic_mode, getString(R.string.mode_juntos))
+        );
 
         getSharedPreferences("app", MODE_PRIVATE)
                 .edit().putString(KEY_MODE, "juntos").apply();
     }
 
     private void showLibresStats() {
-        tvStatsModeTitle.setText("Tiros libres");
+        tvStatsModeTitle.setText(R.string.mode_libres);
         tvAccuracyPercent.setText("64%");
         tvShotsCount.setText("64 / 100");
         imgStatsRing.setImageResource(R.drawable.stats_ring_libres);
         setActiveButton(btnLibres);
-        tvDynamicModeInfo.setText("Modo seleccionado: Tiros libres");
+        tvDynamicModeInfo.setText(
+                getString(R.string.dynamic_mode, getString(R.string.mode_libres))
+        );
 
         getSharedPreferences("app", MODE_PRIVATE)
                 .edit().putString(KEY_MODE, "libres").apply();
     }
 
     private void showCampoStats() {
-        tvStatsModeTitle.setText("Tiros de campo");
+        tvStatsModeTitle.setText(R.string.mode_campo);
         tvAccuracyPercent.setText("42%");
         tvShotsCount.setText("84 / 200");
         imgStatsRing.setImageResource(R.drawable.stats_ring_campo);
         setActiveButton(btnCampo);
-        tvDynamicModeInfo.setText("Modo seleccionado: Tiros de campo");
+        tvDynamicModeInfo.setText(
+                getString(R.string.dynamic_mode, getString(R.string.mode_campo))
+        );
 
         getSharedPreferences("app", MODE_PRIVATE)
                 .edit().putString(KEY_MODE, "campo").apply();
     }
 
     private void showTresStats() {
-        tvStatsModeTitle.setText("Tiros de tres");
+        tvStatsModeTitle.setText(R.string.mode_tres);
         tvAccuracyPercent.setText("31%");
         tvShotsCount.setText("31 / 100");
         imgStatsRing.setImageResource(R.drawable.stats_ring_tres);
         setActiveButton(btnTres);
-        tvDynamicModeInfo.setText("Modo seleccionado: Tiros de tres");
+        tvDynamicModeInfo.setText(
+                getString(R.string.dynamic_mode, getString(R.string.mode_tres))
+        );
 
         getSharedPreferences("app", MODE_PRIVATE)
                 .edit().putString(KEY_MODE, "tres").apply();

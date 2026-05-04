@@ -5,4 +5,11 @@
     <string name="stats_period">últimos 30 días</string>
     <string name="shots_label">Tiros / intentos</string>
     <string name="shots_count">270 / 1000</string>
+
+    <string name="mode_juntos">Juntos</string>
+    <string name="mode_libres">Tiros libres</string>
+    <string name="mode_campo">Tiros de campo</string>
+    <string name="mode_tres">Tiros de tres</string>
+
+    <string name="dynamic_mode">Modo seleccionado: %1$s</string>
 </resources>
