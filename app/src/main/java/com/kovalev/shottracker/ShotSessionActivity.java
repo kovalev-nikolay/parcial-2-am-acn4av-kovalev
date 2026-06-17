@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.TextView;
+import android.content.Intent;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -72,7 +73,7 @@ public class ShotSessionActivity extends AppCompatActivity {
         findViewById(R.id.btnShotMade).setOnClickListener(v -> registerShot(true));
         findViewById(R.id.btnShotMissed).setOnClickListener(v -> registerShot(false));
 
-        findViewById(R.id.btnFinishSession).setOnClickListener(v -> finish());
+        findViewById(R.id.btnFinishSession).setOnClickListener(v -> openResultScreen());
     }
 
     private void registerShot(boolean made) {
@@ -104,5 +105,26 @@ public class ShotSessionActivity extends AppCompatActivity {
         blinkAnimation.setRepeatCount(Animation.INFINITE);
 
         tvSessionStatus.startAnimation(blinkAnimation);
+    }
+
+    private void openResultScreen() {
+        long endedAt = lastShotAt;
+
+        double averageTime = 0;
+        if (totalCount > 0) {
+            averageTime = ((lastShotAt - startedAt) / 1000.0) / totalCount;
+        }
+
+        Intent intent = new Intent(ShotSessionActivity.this, SessionResultActivity.class);
+        intent.putExtra(SessionResultActivity.EXTRA_MODE_TITLE, modeTitle);
+        intent.putExtra(SessionResultActivity.EXTRA_MADE_COUNT, madeCount);
+        intent.putExtra(SessionResultActivity.EXTRA_TOTAL_COUNT, totalCount);
+        intent.putExtra(SessionResultActivity.EXTRA_MAX_STREAK, maxStreak);
+        intent.putExtra(SessionResultActivity.EXTRA_AVERAGE_TIME, averageTime);
+        intent.putExtra(SessionResultActivity.EXTRA_STARTED_AT, startedAt);
+        intent.putExtra(SessionResultActivity.EXTRA_ENDED_AT, endedAt);
+
+        startActivity(intent);
+        finish();
     }
 }
