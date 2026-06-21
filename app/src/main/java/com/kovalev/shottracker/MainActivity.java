@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         initViews();
         setupClicks();
-        seedDemoSessions();
+        // seedDemoSessions();
 
         String mode = getSharedPreferences("app", MODE_PRIVATE)
                 .getString(KEY_MODE, "juntos");
