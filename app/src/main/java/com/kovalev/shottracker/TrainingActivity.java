@@ -31,16 +31,16 @@ public class TrainingActivity extends AppCompatActivity {
 
     private void setupClicks() {
         findViewById(R.id.btnTrainJuntos).setOnClickListener(v ->
-                openShotSession("juntos", "Juntos"));
+                openShotSession("juntos", getString(R.string.mode_juntos)));
 
         findViewById(R.id.btnTrainLibres).setOnClickListener(v ->
-                openShotSession("libres", "Tiros libres"));
+                openShotSession("libres", getString(R.string.mode_libres)));
 
         findViewById(R.id.btnTrainCampo).setOnClickListener(v ->
-                openShotSession("campo", "Tiros de campo"));
+                openShotSession("campo", getString(R.string.mode_campo)));
 
         findViewById(R.id.btnTrainTres).setOnClickListener(v ->
-                openShotSession("tres", "Tiros de tres"));
+                openShotSession("tres", getString(R.string.mode_tres)));
 
         findViewById(R.id.btnTrainingBackHome).setOnClickListener(v -> {
             Intent intent = new Intent(TrainingActivity.this, MainActivity.class);
