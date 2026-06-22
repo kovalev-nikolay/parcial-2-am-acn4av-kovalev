@@ -31,16 +31,16 @@ public class StatsActivity extends AppCompatActivity {
 
     private void setupClicks() {
         findViewById(R.id.btnStatsJuntos).setOnClickListener(v ->
-                openSessionList("juntos", "Juntos"));
+                openSessionList("juntos", getString(R.string.mode_juntos)));
 
         findViewById(R.id.btnStatsLibres).setOnClickListener(v ->
-                openSessionList("libres", "Tiros libres"));
+                openSessionList("libres", getString(R.string.mode_libres)));
 
         findViewById(R.id.btnStatsCampo).setOnClickListener(v ->
-                openSessionList("campo", "Tiros de campo"));
+                openSessionList("campo", getString(R.string.mode_campo)));
 
         findViewById(R.id.btnStatsTres).setOnClickListener(v ->
-                openSessionList("tres", "Tiros de tres"));
+                openSessionList("tres", getString(R.string.mode_tres)));
 
         findViewById(R.id.btnStatsBackHome).setOnClickListener(v -> {
             Intent intent = new Intent(StatsActivity.this, MainActivity.class);
