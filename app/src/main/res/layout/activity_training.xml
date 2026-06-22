@@ -26,7 +26,7 @@
             android:id="@+id/tvTrainingSelectTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Seleccionar entrenamiento"
+            android:text="@string/training_select_title"
             android:textColor="@color/color_white"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Elegí qué tipo de tiros vas a registrar"
+            android:text="@string/training_select_subtitle"
             android:textColor="@color/color_white"
             android:textSize="15sp" />
 
@@ -68,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Juntos"
+                    android:text="@string/mode_juntos"
                     android:textColor="@color/color_white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -87,7 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Tiros libres"
+                    android:text="@string/mode_libres"
                     android:textColor="@color/color_white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -106,7 +106,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Tiros de campo"
+                    android:text="@string/mode_campo"
                     android:textColor="@color/color_white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Tiros de tres"
+                    android:text="@string/mode_tres"
                     android:textColor="@color/color_white"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -140,7 +140,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:gravity="center"
-            android:text="Después de elegir un modo, empieza la sesión de entrenamiento."
+            android:text="@string/training_select_info"
             android:textColor="@color/color_orange"
             android:textSize="14sp" />
 
@@ -154,7 +154,7 @@
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:background="@drawable/bg_button_train"
-            android:text="Volver al inicio"
+            android:text="@string/back_home"
             android:textColor="@color/color_white"
             android:textSize="16sp"
             android:textStyle="bold" />

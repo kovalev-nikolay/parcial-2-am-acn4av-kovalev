@@ -19,4 +19,10 @@
     <string name="stats_icon_description">Ícono de estadísticas</string>
     <string name="stats_info">Después de elegir una categoría, vas a ver el historial y la tendencia de rendimiento.</string>
     <string name="back_home">Volver al inicio</string>
+
+    <!-- Training screen -->
+    <string name="training_select_title">Seleccionar entrenamiento</string>
+    <string name="training_select_subtitle">Elegí qué tipo de tiros vas a registrar</string>
+    <string name="training_select_info">Después de elegir un modo, empieza la sesión de entrenamiento.</string>
+
 </resources>
