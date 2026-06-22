@@ -54,14 +54,14 @@
                 android:layout_width="240dp"
                 android:layout_height="240dp"
                 android:layout_gravity="center"
-                android:contentDescription="Accuracy progress ring" />
+                android:contentDescription="@string/home_progress_ring_description" />
 
             <TextView
                 android:id="@+id/tvAccuracyPercent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="27%"
+                android:text="@string/home_accuracy_default"
                 android:textColor="@color/color_white"
                 android:textSize="58sp"
                 android:textStyle="bold" />
@@ -71,7 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="🏀"
+                android:text="@string/home_basketball_icon"
                 android:textSize="28sp" />
 
         </FrameLayout>
@@ -152,7 +152,7 @@
                     android:layout_marginTop="8dp"
                     android:background="@drawable/bg_circle_number"
                     android:gravity="center"
-                    android:text="★"
+                    android:text="@string/home_star_icon"
                     android:textColor="@color/color_black"
                     android:textSize="22sp"
                     android:fontFamily="sans-serif-medium" />
@@ -162,7 +162,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginBottom="12dp"
-                    android:text="Juntos"
+                    android:text="@string/mode_juntos"
                     android:textColor="@color/color_white"
                     android:textStyle="bold"
                     android:textSize="18sp" />
@@ -190,7 +190,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginBottom="12dp"
-                    android:text="Tiros libres"
+                    android:text="@string/mode_libres"
                     android:textColor="@color/color_white"
                     android:textStyle="bold"
                     android:textSize="18sp" />
@@ -218,7 +218,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginBottom="12dp"
-                    android:text="Tiros de campo"
+                    android:text="@string/mode_campo"
                     android:textColor="@color/color_white"
                     android:textStyle="bold"
                     android:textSize="18sp" />
@@ -246,7 +246,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|center_horizontal"
                     android:layout_marginBottom="12dp"
-                    android:text="Tiros de tres"
+                    android:text="@string/mode_tres"
                     android:textColor="@color/color_white"
                     android:textStyle="bold"
                     android:textSize="18sp" />
@@ -278,7 +278,7 @@
             android:layout_weight="1"
             android:padding="12dp"
             android:src="@drawable/ic_nav_stats"
-            android:contentDescription="Estadística" />
+            android:contentDescription="@string/home_nav_stats_description" />
 
         <TextView
             android:id="@+id/navHome"
@@ -287,7 +287,7 @@
             android:layout_weight="1"
             android:background="@color/color_orange"
             android:gravity="center"
-            android:text="⌂"
+            android:text="@string/home_nav_icon"
             android:textColor="@color/color_black"
             android:textSize="34sp"
             android:textStyle="bold" />
@@ -299,7 +299,7 @@
             android:layout_weight="1"
             android:padding="12dp"
             android:src="@drawable/ic_nav_ball"
-            android:contentDescription="Training" />
+            android:contentDescription="@string/home_nav_training_description" />
 
     </LinearLayout>
 

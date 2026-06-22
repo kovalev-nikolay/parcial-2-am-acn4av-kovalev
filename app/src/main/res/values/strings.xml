@@ -51,4 +51,13 @@
     <string name="saved_trainings_title">Entrenamientos guardados</string>
     <string name="back_stats">Volver a estadísticas</string>
 
+    <!-- Home screen -->
+    <string name="home_progress_ring_description">Indicador de porcentaje</string>
+    <string name="home_accuracy_default">27%</string>
+    <string name="home_basketball_icon">🏀</string>
+    <string name="home_star_icon">★</string>
+    <string name="home_nav_icon">⌂</string>
+    <string name="home_nav_stats_description">Estadísticas</string>
+    <string name="home_nav_training_description">Entrenamiento</string>
+
 </resources>
