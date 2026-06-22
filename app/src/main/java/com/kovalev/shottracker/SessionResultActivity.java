@@ -78,7 +78,7 @@ public class SessionResultActivity extends AppCompatActivity {
         long endedAt = getIntent().getLongExtra(EXTRA_ENDED_AT, 0);
 
         if (modeTitle == null) {
-            modeTitle = "Juntos";
+            modeTitle = getString(R.string.mode_juntos);
         }
 
         int percent = 0;
@@ -87,22 +87,23 @@ public class SessionResultActivity extends AppCompatActivity {
         }
 
         tvResultMode.setText(modeTitle);
-        tvResultPercent.setText(percent + "%");
-        tvResultShots.setText("Aciertos / intentos: " + madeCount + " / " + totalCount);
-        tvResultMaxStreak.setText("Máxima racha: " + maxStreak);
-        tvResultAverageTime.setText(String.format(Locale.getDefault(), "Tiempo promedio por tiro: %.1f seg", averageTime));
-        tvResultStart.setText("Inicio: " + formatDate(startedAt));
-        tvResultEnd.setText("Fin: " + formatDate(endedAt));
+        tvResultPercent.setText(getString(R.string.result_percent_format, percent));
+        tvResultShots.setText(getString(R.string.result_shots_format, madeCount, totalCount));
+        tvResultMaxStreak.setText(getString(R.string.result_max_streak_format, maxStreak));
+        tvResultAverageTime.setText(getString(R.string.result_average_time_format, averageTime));
+        tvResultStart.setText(getString(R.string.result_start_format, formatDate(startedAt)));
+        tvResultEnd.setText(getString(R.string.result_end_format, formatDate(endedAt)));
+
         if (fromHistory) {
-            btnResultBackTraining.setText("Volver al historial");
+            btnResultBackTraining.setText(R.string.back_history);
         } else {
-            btnResultBackTraining.setText("Volver a entrenamientos");
+            btnResultBackTraining.setText(R.string.back_training);
         }
     }
 
     private String formatDate(long time) {
         if (time == 0) {
-            return "--";
+            return getString(R.string.empty_date);
         }
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault());

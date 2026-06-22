@@ -60,4 +60,14 @@
     <string name="home_nav_stats_description">Estadísticas</string>
     <string name="home_nav_training_description">Entrenamiento</string>
 
+    <!-- Session result dynamic texts -->
+    <string name="result_percent_format">%1$d%%</string>
+    <string name="result_shots_format">Aciertos / intentos: %1$d / %2$d</string>
+    <string name="result_max_streak_format">Máxima racha: %1$d</string>
+    <string name="result_average_time_format">Tiempo promedio por tiro: %1$.1f seg</string>
+    <string name="result_start_format">Inicio: %1$s</string>
+    <string name="result_end_format">Fin: %1$s</string>
+    <string name="back_history">Volver al historial</string>
+    <string name="empty_date">--</string>
+
 </resources>
