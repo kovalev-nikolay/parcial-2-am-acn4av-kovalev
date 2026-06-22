@@ -45,4 +45,10 @@
     <string name="result_end_default">Fin: --</string>
     <string name="back_training">Volver a entrenamientos</string>
 
+    <!-- Session list screen -->
+    <string name="session_list_title">Historial</string>
+    <string name="trend_title">Tendencia de acierto</string>
+    <string name="saved_trainings_title">Entrenamientos guardados</string>
+    <string name="back_stats">Volver a estadísticas</string>
+
 </resources>
