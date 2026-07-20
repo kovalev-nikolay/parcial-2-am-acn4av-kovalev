@@ -3,6 +3,9 @@ package com.kovalev.shottracker;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 import android.content.Intent;
 import java.util.Calendar;
 
@@ -94,6 +97,13 @@ public class MainActivity extends AppCompatActivity {
         btnLibres.setOnClickListener(v -> showLibresStats());
         btnCampo.setOnClickListener(v -> showCampoStats());
         btnTres.setOnClickListener(v -> showTresStats());
+
+        findViewById(R.id.btnLogout).setOnClickListener(v -> {
+            FirebaseAuth.getInstance().signOut();
+            Toast.makeText(MainActivity.this, R.string.logout_success, Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            finish();
+        });
 
         findViewById(R.id.navStats).setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, StatsActivity.class);

@@ -8,4 +8,6 @@
     <color name="color_white">#FFFFFF</color>
     <color name="color_gray">#BDBDBD</color>
     <color name="color_black">#000000</color>
+    <color name="color_logout_text">#D6D6D6</color>
+    <color name="color_logout_background">#403A3A3A</color>
 </resources>

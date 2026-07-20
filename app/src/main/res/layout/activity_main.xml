@@ -257,6 +257,25 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/logout_margin"
+        android:layout_marginEnd="@dimen/logout_margin"
+        android:backgroundTint="@color/color_logout_background"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingStart="12dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="6dp"
+        android:text="@string/logout_action"
+        android:textAllCaps="false"
+        android:textColor="@color/color_logout_text"
+        android:textSize="@dimen/logout_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <LinearLayout
         android:id="@+id/bottomNav"
         android:layout_width="0dp"

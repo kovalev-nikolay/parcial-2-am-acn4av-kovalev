@@ -78,4 +78,16 @@
     <!-- Shot session dynamic texts -->
     <string name="shot_counter_format">%1$d / %2$d</string>
 
+    <!-- Authentication -->
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login_subtitle">Accedé a BasketShotTracker</string>
+    <string name="login_email_hint">Correo electrónico</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_action">Iniciar sesión</string>
+    <string name="login_fields_required">Ingresá tu correo y contraseña.</string>
+    <string name="login_success">Sesión iniciada.</string>
+    <string name="login_error">No se pudo iniciar sesión. Revisá tus datos.</string>
+    <string name="logout_action">Cerrar sesión</string>
+    <string name="logout_success">Sesión cerrada.</string>
+
 </resources>
