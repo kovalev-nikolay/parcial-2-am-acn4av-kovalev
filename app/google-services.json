@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "910152574523",
+    "project_id": "basketshottracker-final",
+    "storage_bucket": "basketshottracker-final.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910152574523:android:8c9446561d312a3171de1e",
+        "android_client_info": {
+          "package_name": "com.kovalev.shottracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJU86unsCeL4KPsU_eZ-C-sKrgBtRW03c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
