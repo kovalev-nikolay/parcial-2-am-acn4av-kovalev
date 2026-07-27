@@ -258,6 +258,25 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/logout_margin"
+        android:layout_marginEnd="@dimen/profile_access_spacing"
+        android:backgroundTint="@color/color_profile_access_background"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingStart="@dimen/profile_access_horizontal_padding"
+        android:paddingTop="@dimen/profile_access_vertical_padding"
+        android:paddingEnd="@dimen/profile_access_horizontal_padding"
+        android:paddingBottom="@dimen/profile_access_vertical_padding"
+        android:text="@string/profile_access"
+        android:textAllCaps="false"
+        android:textColor="@color/color_profile_access_text"
+        android:textSize="@dimen/logout_text_size"
+        app:layout_constraintEnd_toStartOf="@id/btnLogout"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

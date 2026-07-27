@@ -98,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
         btnCampo.setOnClickListener(v -> showCampoStats());
         btnTres.setOnClickListener(v -> showTresStats());
 
+        findViewById(R.id.btnProfile).setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ProfileActivity.class)));
+
         findViewById(R.id.btnLogout).setOnClickListener(v -> {
             FirebaseAuth.getInstance().signOut();
             Toast.makeText(MainActivity.this, R.string.logout_success, Toast.LENGTH_SHORT).show();

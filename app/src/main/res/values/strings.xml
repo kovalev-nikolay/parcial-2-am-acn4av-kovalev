@@ -1,4 +1,4 @@
-﻿<resources>
+<resources>
     <string name="app_name">BasketShotTracker</string>
 
     <string name="stats_mode_all">Juntos</string>
@@ -101,7 +101,16 @@
     <string name="register_success">Cuenta creada correctamente.</string>
     <string name="register_auth_error">No se pudo crear la cuenta. Revisá los datos ingresados.</string>
     <string name="register_profile_error">La cuenta fue creada, pero no se pudo guardar el perfil.</string>
-    <string name="logout_action">Cerrar sesión</string>
+    <string name="profile_access">Mi perfil</string>
+    <string name="profile_title">Mi perfil</string>
+    <string name="profile_subtitle">Datos de tu cuenta</string>
+    <string name="profile_name_label">Nombre</string>
+    <string name="profile_email_label">Correo electrónico</string>
+    <string name="profile_commission_label">Comisión</string>
+    <string name="profile_project_label">Proyecto</string>
+    <string name="profile_empty_value">—</string>
+    <string name="profile_loading">Cargando perfil</string>
+    <string name="profile_load_error">No se pudo cargar el perfil.</string>    <string name="logout_action">Cerrar sesión</string>
     <string name="logout_success">Sesión cerrada.</string>
 
 </resources>

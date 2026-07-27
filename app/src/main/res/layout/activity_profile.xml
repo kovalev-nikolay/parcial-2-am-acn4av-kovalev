@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_screen"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/profile_screen_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/profile_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/profile_title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_subtitle_margin"
+            android:gravity="center"
+            android:text="@string/profile_subtitle"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/profile_subtitle_size" />
+
+        <ProgressBar
+            android:id="@+id/profileProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/profile_loading_margin"
+            android:contentDescription="@string/profile_loading"
+            android:indeterminateTint="@color/color_orange" />
+
+        <LinearLayout
+            android:id="@+id/profileContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_content_margin"
+            android:background="@drawable/bg_card_dark"
+            android:orientation="vertical"
+            android:padding="@dimen/profile_card_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_name_label"
+                android:textColor="@color/color_profile_label"
+                android:textSize="@dimen/profile_label_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_value_margin"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/profile_value_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_field_spacing"
+                android:text="@string/profile_email_label"
+                android:textColor="@color/color_profile_label"
+                android:textSize="@dimen/profile_label_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textProfileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_value_margin"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/profile_value_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_field_spacing"
+                android:text="@string/profile_commission_label"
+                android:textColor="@color/color_profile_label"
+                android:textSize="@dimen/profile_label_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textProfileCommission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_value_margin"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/profile_value_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_field_spacing"
+                android:text="@string/profile_project_label"
+                android:textColor="@color/color_profile_label"
+                android:textSize="@dimen/profile_label_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textProfileProject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profile_value_margin"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/profile_value_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
