@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,7 +33,10 @@ public class LoginActivity extends AppCompatActivity {
         editEmail = findViewById(R.id.editEmail);
         editPassword = findViewById(R.id.editPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
+        TextView textCreateAccount = findViewById(R.id.textCreateAccount);
         buttonLogin.setOnClickListener(view -> signIn());
+        textCreateAccount.setOnClickListener(view ->
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class)));
     }
 
     private void signIn() {

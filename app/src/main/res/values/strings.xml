@@ -1,4 +1,4 @@
-<resources>
+﻿<resources>
     <string name="app_name">BasketShotTracker</string>
 
     <string name="stats_mode_all">Juntos</string>
@@ -87,6 +87,20 @@
     <string name="login_fields_required">Ingresá tu correo y contraseña.</string>
     <string name="login_success">Sesión iniciada.</string>
     <string name="login_error">No se pudo iniciar sesión. Revisá tus datos.</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="register_title">Crear cuenta</string>
+    <string name="register_subtitle">Registrate en BasketShotTracker</string>
+    <string name="register_name_hint">Nombre</string>
+    <string name="register_email_hint">Correo electrónico</string>
+    <string name="register_password_hint">Contraseña</string>
+    <string name="register_repeat_password_hint">Repetir contraseña</string>
+    <string name="register_action">Registrarme</string>
+    <string name="register_fields_required">Completá todos los campos.</string>
+    <string name="register_passwords_different">Las contraseñas no coinciden.</string>
+    <string name="register_password_too_short">La contraseña debe tener al menos 6 caracteres.</string>
+    <string name="register_success">Cuenta creada correctamente.</string>
+    <string name="register_auth_error">No se pudo crear la cuenta. Revisá los datos ingresados.</string>
+    <string name="register_profile_error">La cuenta fue creada, pero no se pudo guardar el perfil.</string>
     <string name="logout_action">Cerrar sesión</string>
     <string name="logout_success">Sesión cerrada.</string>
 
