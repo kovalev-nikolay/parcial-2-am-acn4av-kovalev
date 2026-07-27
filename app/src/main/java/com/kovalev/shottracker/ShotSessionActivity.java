@@ -125,7 +125,17 @@ public class ShotSessionActivity extends AppCompatActivity {
         }
 
         saveSessionLocally(endedAt, percent, averageTime);
-
+        new FirebaseSessionRepository(this).saveSession(
+                mode,
+                modeTitle,
+                startedAt,
+                endedAt,
+                madeCount,
+                totalCount,
+                percent,
+                maxStreak,
+                averageTime
+        );
         Intent intent = new Intent(ShotSessionActivity.this, SessionResultActivity.class);
         intent.putExtra(SessionResultActivity.EXTRA_MODE_TITLE, modeTitle);
         intent.putExtra(SessionResultActivity.EXTRA_MADE_COUNT, madeCount);
