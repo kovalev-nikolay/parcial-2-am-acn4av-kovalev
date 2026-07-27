@@ -186,8 +186,8 @@ public class MainActivity extends AppCompatActivity {
             percent = Math.round((made * 100f) / total);
         }
 
-        tvAccuracyPercent.setText(percent + "%");
-        tvShotsCount.setText(made + " / " + total);
+        tvAccuracyPercent.setText(getString(R.string.result_percent_format, percent));
+        tvShotsCount.setText(getString(R.string.home_shots_count_format, made, total));
 
         return percent;
     }

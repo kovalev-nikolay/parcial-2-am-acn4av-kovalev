@@ -31,7 +31,7 @@
     <string name="shot_session_counter_label">Aciertos / intentos</string>
     <string name="shot_made">Encesté</string>
     <string name="shot_missed">Fallé</string>
-    <string name="shot_session_status">Entrenamiento en curso...</string>
+    <string name="shot_session_status">Entrenamiento en curso…</string>
     <string name="finish_training">Finalizar entrenamiento</string>
 
     <!-- Session result screen -->
@@ -41,8 +41,8 @@
     <string name="result_shots_default">Aciertos / intentos: 0 / 0</string>
     <string name="result_max_streak_default">Máxima racha: 0</string>
     <string name="result_average_time_default">Tiempo promedio por tiro: 0 seg</string>
-    <string name="result_start_default">Inicio: --</string>
-    <string name="result_end_default">Fin: --</string>
+    <string name="result_start_default">Inicio: —</string>
+    <string name="result_end_default">Fin: —</string>
     <string name="back_training">Volver a entrenamientos</string>
 
     <!-- Session list screen -->
@@ -59,6 +59,10 @@
     <string name="home_nav_icon">⌂</string>
     <string name="home_nav_stats_description">Estadísticas</string>
     <string name="home_nav_training_description">Entrenamiento</string>
+    <string name="home_number_one">1</string>
+    <string name="home_number_two">2</string>
+    <string name="home_number_three">3</string>
+    <string name="home_shots_count_format">%1$d / %2$d</string>
 
     <!-- Session result dynamic texts -->
     <string name="result_percent_format">%1$d%%</string>
@@ -110,7 +114,8 @@
     <string name="profile_email_label">Correo electrónico</string>
     <string name="profile_empty_value">—</string>
     <string name="profile_loading">Cargando perfil</string>
-    <string name="profile_load_error">No se pudo cargar el perfil.</string>    <string name="logout_action">Cerrar sesión</string>
+    <string name="profile_load_error">No se pudo cargar el perfil.</string>
+    <string name="logout_action">Cerrar sesión</string>
     <string name="profile_basketball_image_url" translatable="false">https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&amp;fit=crop&amp;w=400&amp;q=80</string>
     <string name="profile_basketball_image_description">Imagen de básquet</string>
     <string name="profile_recent_sessions_title">Últimos entrenamientos</string>

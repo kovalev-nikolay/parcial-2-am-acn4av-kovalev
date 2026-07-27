@@ -26,7 +26,8 @@
     <dimen name="profile_label_size">13sp</dimen>
     <dimen name="profile_value_size">18sp</dimen>
     <dimen name="profile_value_margin">4dp</dimen>
-    <dimen name="profile_loading_margin">32dp</dimen>    <dimen name="logout_margin">12dp</dimen>
+    <dimen name="profile_loading_margin">32dp</dimen>
+    <dimen name="logout_margin">12dp</dimen>
     <dimen name="profile_image_size">112dp</dimen>
     <dimen name="profile_image_margin">20dp</dimen>
     <dimen name="profile_sessions_title_margin">16dp</dimen>
