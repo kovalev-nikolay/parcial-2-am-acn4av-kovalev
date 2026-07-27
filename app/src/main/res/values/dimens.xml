@@ -27,5 +27,14 @@
     <dimen name="profile_value_size">18sp</dimen>
     <dimen name="profile_value_margin">4dp</dimen>
     <dimen name="profile_loading_margin">32dp</dimen>    <dimen name="logout_margin">12dp</dimen>
+    <dimen name="profile_image_size">112dp</dimen>
+    <dimen name="profile_image_margin">20dp</dimen>
+    <dimen name="profile_sessions_title_margin">16dp</dimen>
+    <dimen name="profile_sessions_title_size">20sp</dimen>
+    <dimen name="profile_session_row_margin">10dp</dimen>
+    <dimen name="profile_session_row_padding">12dp</dimen>
+    <dimen name="profile_session_row_title_size">16sp</dimen>
+    <dimen name="profile_session_row_result_size">15sp</dimen>
+    <dimen name="profile_session_row_result_margin">4dp</dimen>
     <dimen name="logout_text_size">12sp</dimen>
 </resources>

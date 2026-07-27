@@ -12,5 +12,6 @@
     <color name="color_profile_access_text">#E8E8E8</color>
     <color name="color_profile_access_background">#403A3A3A</color>
     <color name="color_profile_label">#FF9A52</color>    <color name="color_logout_text">#D6D6D6</color>
+    <color name="color_profile_session_result">#D6D6D6</color>
     <color name="color_logout_background">#403A3A3A</color>
 </resources>

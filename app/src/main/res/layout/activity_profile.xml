@@ -30,6 +30,15 @@
             android:textColor="@color/color_gray"
             android:textSize="@dimen/profile_subtitle_size" />
 
+        <ImageView
+            android:id="@+id/profileBasketballImage"
+            android:layout_width="@dimen/profile_image_size"
+            android:layout_height="@dimen/profile_image_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/profile_image_margin"
+            android:contentDescription="@string/profile_basketball_image_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground" />
         <ProgressBar
             android:id="@+id/profileProgress"
             android:layout_width="wrap_content"
@@ -82,42 +91,32 @@
                 android:textColor="@color/color_white"
                 android:textSize="@dimen/profile_value_size" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/profile_field_spacing"
-                android:text="@string/profile_commission_label"
-                android:textColor="@color/color_profile_label"
-                android:textSize="@dimen/profile_label_size"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textProfileCommission"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/profile_value_margin"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/profile_value_size" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/profile_field_spacing"
-                android:text="@string/profile_project_label"
-                android:textColor="@color/color_profile_label"
-                android:textSize="@dimen/profile_label_size"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textProfileProject"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/profile_value_margin"
-                android:textColor="@color/color_white"
-                android:textSize="@dimen/profile_value_size" />
 
         </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/profile_sessions_title_margin"
+            android:text="@string/profile_recent_sessions_title"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/profile_sessions_title_size"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/sessionsProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/profile_session_row_margin"
+            android:contentDescription="@string/profile_loading"
+            android:indeterminateTint="@color/color_orange" />
+
+        <LinearLayout
+            android:id="@+id/recentSessionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
     </LinearLayout>
 
 </ScrollView>

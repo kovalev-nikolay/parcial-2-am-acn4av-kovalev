@@ -108,11 +108,16 @@
     <string name="profile_subtitle">Datos de tu cuenta</string>
     <string name="profile_name_label">Nombre</string>
     <string name="profile_email_label">Correo electrónico</string>
-    <string name="profile_commission_label">Comisión</string>
-    <string name="profile_project_label">Proyecto</string>
     <string name="profile_empty_value">—</string>
     <string name="profile_loading">Cargando perfil</string>
     <string name="profile_load_error">No se pudo cargar el perfil.</string>    <string name="logout_action">Cerrar sesión</string>
+    <string name="profile_basketball_image_url" translatable="false">https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&amp;fit=crop&amp;w=400&amp;q=80</string>
+    <string name="profile_basketball_image_description">Imagen de básquet</string>
+    <string name="profile_recent_sessions_title">Últimos entrenamientos</string>
+    <string name="profile_recent_sessions_empty">Todavía no hay entrenamientos sincronizados.</string>
+    <string name="profile_sessions_load_error">No se pudieron cargar los entrenamientos recientes.</string>
+    <string name="profile_session_title_default">Entrenamiento</string>
+    <string name="profile_session_result_format">%1$d/%2$d · %3$d%%</string>
     <string name="logout_success">Sesión cerrada.</string>
 
 </resources>
